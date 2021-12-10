@@ -1,0 +1,12 @@
+<p>Buenos días, Indícame tu nombre</p>
+
+<input #fatherInput (keyup)="keyUp(fatherInput.value)"/>
+
+<app-son-component 
+[inputText]="inputText"
+    (emitMessage)="setMessage($event)">
+</app-son-component>
+
+
+<h3>{{inputText}}, has ordenado para comer ⬇️</h3>
+<p>{{ sonMessage }}</p>
