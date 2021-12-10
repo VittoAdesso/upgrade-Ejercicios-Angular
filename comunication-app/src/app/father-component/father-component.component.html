@@ -1,0 +1,16 @@
+
+
+
+<div class = "father1">
+    <h1>Hola!</h1>
+        <div class="father2">
+            <h2>Dime cuál es tu comida favorita... 👀</h2>
+            <input #fatherInput (keyup)="keyUp(fatherInput.value)"/>
+        </div>
+        
+            <div>
+                <!-- sino le importo el input text en el hijo me da error  -->
+                <!--  le digo que el modulo app son me llamará la variable con valor ...  -->
+                <app-son-component [inputText]="inputText"></app-son-component>
+            </div>
+</div>
