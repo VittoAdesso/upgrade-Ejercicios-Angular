@@ -11,7 +11,7 @@ export class RequestExampleComponent  implements OnInit {
 
   public characterList: CharacterInterface[] = []; 
 
-  constructor(private requestService: RequestService) { }
+  constructor(private requestService: RequestService { }
 
   ngOnInit(): void {
 
